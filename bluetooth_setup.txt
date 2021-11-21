@@ -1,0 +1,20 @@
+# Might need this to get ps4 controller linked up
+
+sudo bluetoothctl
+
+agent on
+default-agent
+scan on
+(turn on ps4 pairing - share + ps button)
+(should see new device w mac address)
+
+connect MAC_ADDRESS
+
+trust MAC_ADDRESS
+(ctrl + d to quit)
+
+
+Make sure joystick installed
+sudo apt-get install joystick
+sudo jstest /dev/input/js0 (to test)
+
